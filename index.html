@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alarm Clock</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+    body {
+        background-color: #f2f2f2;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .form-group label {
+        font-weight: bold;
+    }
+    
+    .btn-primary {
+        display: block;
+        margin: 0 auto;
+    }
+    
+</head>
+<body>
+	<div class="container mt-5">
+		<h1>Alarm Clock</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="hours">Hours:</label>
+					<input type="number" id="hours" class="form-control" min="0" max="23" placeholder="00">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="minutes">Minutes:</label>
+					<input type="number" id="minutes" class="form-control" min="0" max="59" placeholder="00">
+				</div>
+			</div>
+			<div class="col-md-12">
+				<button id="set-alarm" class="btn btn-primary">Set Alarm</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
